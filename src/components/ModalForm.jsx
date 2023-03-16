@@ -19,8 +19,6 @@ function ModalForm() {
         setModifiedContents(foundData.contents);
       }, [todos, param.id]);
 
-      console.log(foundData)
-
     const handleSaveChanges = () => {
         if (foundData) {
           dispatch(__switchTodo({
