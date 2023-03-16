@@ -107,7 +107,6 @@ const todoSlice = createSlice({
             if (index !== -1) {
                 state.todos[index].contents = editContent; 
             }
-            console.log(index)
         },
         [__switchTodo.rejected] : (state, action) => {
             state.isLoading = false;
